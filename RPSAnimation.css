@@ -1,73 +1,40 @@
-.Rock-button,.Paper-button,.Scissors-button{
-    background-color: transparent;
-    border-radius: 60px;
-    border: 3px solid white;
-    width: 120px;
-    height: 120px;
-    margin-right: 10px;
-    cursor: pointer;
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
 
     
-    outline: 2px solid white;
-    transition-property: outline-offset,outline-color,background-color;
-    transition-duration: .25s;
-
 }
 
-.Rock-button:hover,.Paper-button:hover,.Scissors-button:hover{
-    outline-offset: 5px;
-}
-.Rock-button:hover,.Paper-button:hover,.Scissors-button:hover{
-    animation: shake 0.50s;
-}
-.Rock-button:hover,.Paper-button:hover,.Scissors-button:hover{
-    outline-offset: 10px;
-}
+.icon--github:hover{
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
+    border-color: #2ea44f;
 
-.Scissors-button:active,.Paper-button:active,.Rock-button:active{
+}
+.move-icon{
     animation: shake 0.25s;
 }
 
-.reset-button,.autoPlay-button{
-    outline: 1px solid white;
-    transition-property: outline-offset,outline-color,background-color;
-    transition-duration: .25s;
-    margin-left: 10px;
+
+.icon:hover{
+    outline-offset: 4px;
+    border-color: #2ea44f;
 
 }
-.reset-button:hover,.autoPlay-button:hover{
-    outline-offset: 5px;
-
+.icon:hover{
+    animation: shake 0.25s;
+    border-color: #2ea44f;
 }
-.reset-button:hover,.autoPlay-button:hover{
-    outline-offset: 6px;
-
-}
-.reset-button:active,.autoPlay-button:active{
-    opacity: 0.5;
-
-}
-
-img{
-    height: 50px;
-}
-
-h6{
-    font-size: 14px;
-    color: white;
-    transition-duration: .25s;
-}
-.aditya-info{
-    position: relative;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    column-gap: 8px;
-    align-items: center;
-    justify-content: center;
-}
-
-
 .icons{
     display: flex;
     column-gap: 25px;
@@ -85,15 +52,6 @@ h6{
     transition-property: outline-offset,outline-color,background-color;
     transition-duration: .25s;
 }
-.icon:hover{
-    outline-offset: 4px;
-    border-color: #2ea44f;
-
-}
-.icon:hover{
-    animation: shake 0.25s;
-    border-color: #2ea44f;
-}
 .github-icon{
     height: 15px;
     width: 15px;
@@ -102,29 +60,37 @@ h6{
     border: 2px solid white;
     padding: 2px 2px;
 }
-.icon--github:hover{
-    background-color: #2ea44f;
-    outline-color: #2ea44f;
-    border-color: #2ea44f;
+
+.reset-button:hover,.autoPlay-button:hover{
+    outline-offset: 5px;
 
 }
-.move-icon{
+.reset-button:hover,.autoPlay-button:hover{
+    outline-offset: 6px;
+
+}
+.reset-button:active,.autoPlay-button:active{
+    opacity: 0.5;
+
+}
+
+.Rock-button:hover,.Paper-button:hover,.Scissors-button:hover{
+    outline-offset: 5px;
+}
+.Rock-button:hover,.Paper-button:hover,.Scissors-button:hover{
+    animation: shake 0.50s;
+}
+.Rock-button:hover,.Paper-button:hover,.Scissors-button:hover{
+    outline-offset: 10px;
+}
+
+.Scissors-button:active,.Paper-button:active,.Rock-button:active{
     animation: shake 0.25s;
 }
 
-@keyframes shake {
-    10%{
-        transform: rotate(15deg);
-    }
-    20%{
-        transform: rotate(-15deg);
-    }
-    30%{
-        transform: rotate(15deg);
-    }
-    40%{
-        transform: rotate(-15deg);
-    }
-
-    
+button{
+    transition: opacity 0.5s;
+}
+button:active{
+    opacity: 0.8;
 }
