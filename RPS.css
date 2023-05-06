@@ -49,6 +49,38 @@ header{
 .score-board{
     margin-top: 60px;
 }
-img{
-    height: 50px;
+
+.button-div{
+    position: relative;
+    bottom: 10px;
 }
+
+@media(max-width:391px){
+    body{
+        background-color: black;
+    }
+    .main-container{
+        width: 400px;
+        top: 150px;
+        height: 1038px;
+    }
+    
+    .icon-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .button-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .aditya-info{
+        position: fixed;
+        bottom: 0px;
+    }
+}
+/* @media(max-width:768px) and (min-width:999px){
+    box{
+        display: none;
+    }
+} */
