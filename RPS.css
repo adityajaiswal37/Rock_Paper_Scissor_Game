@@ -113,7 +113,7 @@ h6{
     
     body{
         display: grid;
-        background-color:rgb(36, 6, 6);
+        background-color:black;
     }
     .main-container{
         width: 425px;
