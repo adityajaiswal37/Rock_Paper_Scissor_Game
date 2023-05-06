@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="RPS.css">
-    <link rel="stylesheet" href="RPS.js">
-    <link rel="stylesheet" href="RPSAnimation.css">
+    <link rel="stylesheet" href="newRPS.css">
+    <link rel="stylesheet" href="newRPSAnimation.css">
+    <link rel="stylesheet" href="newRPS.js">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <main class="main-container">
+    <div class="main-container">
         <header>
-            <p>Rock Paper Scissors</p>
+            <h1>Rock Paper Scissor</h1>
         </header>
-        <main class="sub-main">
-            <div class="icon-div">
-                <button class="Rock-button">
-                    <img class="Rock-image " src="rock-emoji.png" alt="">
-                </button>
-            
-                <button class="Paper-button">
-                    <img class="Paper-image" src="paper-emoji.png" alt="">
-                </button>
-            
-                <button class="Scissors-button">
-                    <img class="Scissors-image" src="scissors-emoji.png" alt="">
-                </button>
-            </div>
+        <main>
+            <button class="Rock-button">
+                <img class="Rock-image " src="rock-emoji.png" alt="">
+            </button>
+        
+            <button class="Paper-button">
+                <img class="Paper-image" src="paper-emoji.png" alt="">
+            </button>
+        
+            <button class="Scissors-button">
+                <img class="Scissors-image" src="scissors-emoji.png" alt="">
+            </button>
+        </main>
+        <div class="lower-middle-section">
             <div class="score-board-div">
-                <p class="game-result"></p>
-                <p class="players-moves"></p>
-                <p class="score-board"></p>
+                <p class="game-result">_</p>
+                <p class="players-moves">_</p>
+                <p class="score-board">_</p>
             </div>
             <div class="button-div">
                 <button class="reset-button">
@@ -40,6 +40,8 @@
                     Auto Play
                 </button>
             </div>
+        </div>
+        <footer>
             <div class="aditya-info">
                 <h6>By Aditya Jaiswal</h6>
                 <div class="icons">
@@ -48,15 +50,11 @@
                     </a>
                 </div>
             </div>
-        </main>
-    </main>
+        </footer>
+    </div>
 
-    
 
-    
-
-    <script src="RPS.js">
-
-    </script>
+    <script src="newRPS.js"></script>
 </body>
+
 </html>
