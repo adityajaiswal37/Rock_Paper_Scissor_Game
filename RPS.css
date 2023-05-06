@@ -1,39 +1,80 @@
-.main-container{
-    display: grid;
-    place-items: center;
-    position: relative;
-    
-    width: 750px;
-    height: 750px;
-    background-color: black;
-}
-.sub-main{
-    display: grid;
-    place-items: center;
-}
 body{
-    display: grid;
-    place-items: center;
-    position: relative;
+    display:grid;
+    place-content: center;
     background-color: black;
     color: white;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: lavender;
+}
+.main-container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    width: 500px;
+    
+    grid-template-rows: 100px 150px 300px 50px;   
+    
 }
 header{
     display: grid;
-    place-items: center;
-
+    justify-content: center;
 }
-.score-board-div{
+h1{
+    font-size: 40px;
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.lower-middle-section{
     display: flex;
     flex-direction: column;
-    place-items: center;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.score-board-div{
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.button-div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.Rock-button,.Paper-button,.Scissors-button{
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    border-radius: 60px;
+    border: 3px solid white;
+    outline: 2px solid white;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: .25s;
+    cursor: pointer;
+}
+.Rock-image,.Paper-image,.Scissors-image{
+    height: 50px;
+    width: 50px;
+}
+.move-icon{
+    height: 30px;
 }
 
+
 .reset-button,.autoPlay-button{
+    outline: 1px solid white;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: .25s;
+    margin-left: 10px;
     font-size: 15px;
     font-weight: bold;
     padding: 8px 15px 8px 15px;
@@ -44,42 +85,50 @@ header{
     outline: 2px solid black;
     transition-property: outline-offset,outline-color,background-color;
     transition-duration: .25s;
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+h6{
+    font-size: 14px;
+    color: white;
+    transition-duration: .25s;
+}
+.aditya-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+@media(max-width:601px){
     
-}
-.score-board{
-    margin-top: 60px;
-}
-
-.button-div{
-    position: relative;
-    bottom: 10px;
-}
-
-@media(max-width:391px){
     body{
-        background-color: black;
+        display: grid;
+        background-color:rgb(36, 6, 6);
     }
     .main-container{
-        width: 400px;
-        height: 1038px;
+        width: 425px;
     }
     
-    .icon-div{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    header,main,.lower-middle-section,.aditya-info{
+        align-items: center;
     }
-    .button-div{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
 
+    .Rock-button,.Paper-button,.Scissors-button{
+        width: 100px;
+        height: 100px;
     }
-    .aditya-info{
-        position: fixed;
-        bottom: 0px;
+    .Rock-image,.Paper-image,.Scissors-image{
+        height: 45px;
+        width: 45px;
     }
 }
-/* @media(max-width:768px) and (min-width:999px){
-    box{
-        display: none;
-    }
-} */
