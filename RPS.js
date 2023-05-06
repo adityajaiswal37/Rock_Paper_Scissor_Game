@@ -82,8 +82,8 @@ function playerMove(playerMove) {
     }
     document.querySelector('.game-result').innerHTML = result;
     document.querySelector('.players-moves').innerHTML = `You:
-        <img class="move-icon" src="/images/${playerMove}-emoji.png" alt="">
-        <img class="move-icon" src="/images/${computerMove}-emoji.png" alt="">
+        <img class="move-icon" src="${playerMove}-emoji.png" alt="">
+        <img class="move-icon" src="${computerMove}-emoji.png" alt="">
         :Computer`;
 
     localStorage.setItem('score', JSON.stringify(score));
